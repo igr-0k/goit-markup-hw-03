@@ -5,9 +5,9 @@
   --w-color: #fff;
 }
 
-* {
+/* * {
   outline: 1px solid tomato;
-}
+} */
 
 body {
   background-color: var(--w-color);
