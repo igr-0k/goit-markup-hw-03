@@ -28,45 +28,50 @@
   </head>
   <body>
     <header class="header">
-      <a href="./index.html" class="logo"> <span class="logo-web">Web</span>Studio</a>
+      <div class="container">
+        <a href="./index.html" class="logo"> <span class="logo-web">Web</span>Studio</a>
 
-      <nav class="nav-menu">
-        <ul class="nav-menu-list list">
-          <li class="nav-menu-item">
-            <a href="./index.html" class="nav-menu-link link current">Студия</a>
+        <nav class="nav-menu">
+          <ul class="nav-menu-list list">
+            <li class="nav-menu-item">
+              <a href="./index.html" class="nav-menu-link link current">Студия</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="./portfolio.html" class="nav-menu-link link">Портфолио</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="" class="nav-menu-link link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="header-contacts list">
+          <li class="header-contacts-item">
+            <a href="mailto:info@devstudio.com" class="header-contacts-link link"
+              >info@devstudio.com</a
+            >
           </li>
-          <li class="nav-menu-item">
-            <a href="./portfolio.html" class="nav-menu-link link">Портфолио</a>
-          </li>
-          <li class="nav-menu-item">
-            <a href="" class="nav-menu-link link">Контакты</a>
+          <li class="header-contacts-item">
+            <a href="tel:+380961111111" class="header-contacts-link link">+38 096 111 11 11</a>
           </li>
         </ul>
-      </nav>
-
-      <ul class="header-contacts list">
-        <li class="header-contacts-item">
-          <a href="mailto:info@devstudio.com" class="header-contacts-link link"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li class="header-contacts-item">
-          <a href="tel:+380961111111" class="header-contacts-link link">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </header>
 
     <main class="main">
       <!-- Hero Section -->
 
-      <section class="hero-section">
-        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button class="hero-btn" type="button">Заказать услугу</button>
+      <section class="hero-section section">
+        <div class="container">
+          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+          <button class="hero-btn" type="button">Заказать услугу</button>
+        </div>
       </section>
 
       <!-- Our Features Section -->
 
-      <section class="features-section">
+      <section class="features-section section">
+        <div class="container">
         <h2 class="section-title visually-hidden">Наши преимущества</h2>
 
         <ul class="features-list list">
@@ -95,11 +100,13 @@
             </p>
           </li>
         </ul>
+        </div>
       </section>
 
       <!-- Our Solutions Section -->
 
-      <section class="solutions-section">
+      <section class="solutions-section section">
+        <div class="container">
         <h2 class="section-title">Чем мы занимаемся</h2>
 
         <ul class="solutions-list list">
@@ -128,11 +135,13 @@
             />
           </li>
         </ul>
+        </div>
       </section>
 
       <!-- Our Team Section -->
 
-      <section class="team-section">
+      <section class="team-section section">
+        <div class="container">
         <h2 class="section-title">Наша команда</h2>
 
         <ul class="team-list list">
@@ -143,8 +152,10 @@
               width="270"
               height="260"
             />
+            <div class="team-descr">
             <h3 class="team-mmbr">Игорь Демьяненко</h3>
             <p class="team-mmbr-position" lang="en">Product Designer</p>
+            </div>
           </li>
           <li class="team-item">
             <img
@@ -153,13 +164,17 @@
               width="270"
               height="260"
             />
+            <div class="team-descr">
             <h3 class="team-mmbr">Ольга Репина</h3>
             <p class="team-mmbr-position" lang="en">Frontend Developer</p>
+            </div>
           </li>
           <li class="team-item">
             <img src="./images/marketer-img.jpg" alt="Маркетолог" width="270" height="260" />
+            <div class="team-descr">
             <h3 class="team-mmbr">Николай Тарасов</h3>
             <p class="team-mmbr-position" lang="en">Marketing</p>
+            </div>
           </li>
           <li class="team-item">
             <img
@@ -168,14 +183,18 @@
               width="270"
               height="260"
             />
+            <div class="team-descr">
             <h3 class="team-mmbr">Михаил Ермаков</h3>
             <p class="team-mmbr-position" lang="en">UI Designer</p>
           </li>
         </ul>
+        </div>
       </section>
+      </div>
     </main>
 
     <footer class="footer">
+      <div class="container">
       <a href="./index.html" class="logo"> <span class="logo-web">Web</span>Studio</a>
 
       <address class="footer-address">
@@ -191,6 +210,7 @@
           </li>
         </ul>
       </address>
+      </div>
     </footer>
   </body>
 </html>

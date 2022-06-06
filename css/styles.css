@@ -5,9 +5,9 @@
   --w-color: #fff;
 }
 
-/* * {
+* {
   outline: 1px solid tomato;
-} */
+}
 
 body {
   background-color: var(--w-color);
@@ -15,7 +15,15 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -41,6 +49,16 @@ body {
   margin: -1px;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section {
+  padding: 94px 0;
+}
+
 .section-title,
 .features-subtitle,
 .team-mmbr,
@@ -48,7 +66,21 @@ body {
   color: var(--title-color);
 }
 
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
 /* ----------------HEADER---------------- */
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
 
 .logo,
 .logo-web {
@@ -63,11 +95,26 @@ body {
   text-decoration: none;
 }
 
+.header .logo {
+  margin-right: 93px;
+}
+
 .logo-web {
   color: var(--accent-color);
 }
 
+.nav-menu {
+  /* margin-right: 331px; */
+}
+
+.nav-menu-list {
+  display: flex;
+}
+
 .nav-menu-link {
+  display: block;
+  padding: 32px 25px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -79,8 +126,17 @@ body {
   color: var(--accent-color);
 }
 
+.nav-menu-item:not(:last-child) {
+  margin-lef: 50px;
+}
+
 .header-contacts {
-  margin: 0;
+  display: flex;
+  margin-left: auto;
+}
+
+.header-contacts-item:not(:first-child) {
+  margin-left: 50px;
 }
 
 .header-contacts-link {
@@ -101,11 +157,13 @@ body {
 /* -------------Hero Section------------- */
 
 .hero-section {
+  padding: 200px 0;
   background-color: #2f303a;
   text-align: center;
 }
 
 .hero-title {
+  text-align: center;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -113,7 +171,8 @@ body {
   text-transform: uppercase;
 
   color: var(--w-color);
-  margin: 0;
+
+  margin-bottom: 30px;
 }
 
 .hero-btn {
@@ -143,6 +202,9 @@ body {
 
 /* -----------Features Section----------- */
 
+.features-section.section {
+  padding-bottom: 0;
+}
 .features-subtitle {
   font-weight: 700;
   font-size: 14px;
@@ -158,7 +220,25 @@ body {
   letter-spacing: 0.03em;
 }
 
+.features-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features-item {
+  width: 270px;
+}
+
+.features-subtitle {
+  margin-bottom: 10px;
+}
+
 /* ----------Solutions Sections---------- */
+
+.solutions-list {
+  display: flex;
+  justify-content: space-between;
+}
 
 /* -------------Team Section------------- */
 
@@ -166,8 +246,23 @@ body {
   background-color: #f5f4fa;
 }
 
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .team-item {
+  width: 270px;
   background-color: var(--w-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-descr {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
 }
 
 .team-mmbr {
@@ -175,6 +270,7 @@ body {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 
 .team-mmbr-position {
@@ -187,11 +283,13 @@ body {
 /* ----------------FOOTER---------------- */
 
 .footer {
+  padding: 60px 0;
   background-color: #2f303a;
 }
 
 .footer .logo {
   color: var(--w-color);
+  margin-bottom: 20px;
 }
 
 .footer-address {
@@ -212,9 +310,24 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 9px;
+}
+
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 /* ---------------PORTFOLIO--------------- */
+
+.filters-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filters-item:not(:last-child) {
+  margin-right: 8px;
+}
 
 .filter-btn {
   background: #f5f4fa;
@@ -239,6 +352,22 @@ body {
   background-color: var(--accent-color);
 }
 
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.projects-item {
+  width: calc(100% / 3 - 30px);
+  margin: 15px;
+  border: 1px solid #eeeeee;
+}
+
+.project-descr {
+  padding: 20px 24px;
+}
+
 .poject-title {
   font-weight: 700;
   font-size: 18px;
@@ -246,7 +375,7 @@ body {
   letter-spacing: 0.06em;
 }
 
-.project-descr {
+.project-type {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
