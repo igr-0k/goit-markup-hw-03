@@ -96,6 +96,7 @@ img {
 }
 
 .header .logo {
+  padding: 10px 0;
   margin-right: 93px;
 }
 
@@ -120,6 +121,7 @@ img {
 
 .nav-menu-link.current {
   color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
 }
 
 .header-contacts {
@@ -132,6 +134,8 @@ img {
 }
 
 .header-contacts-link {
+  display: block;
+  padding: 15px 0;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -155,7 +159,6 @@ img {
 }
 
 .hero-title {
-  text-align: center;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -164,6 +167,9 @@ img {
 
   color: var(--w-color);
 
+  max-width: 696px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
 }
 
